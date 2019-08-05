@@ -1,3 +1,9 @@
-{% extends "!layout.html" %}
+{%- extends "basic/layout.html" %}
 
+{%- block relbar1 %}{% endblock %}
+{%- block relbar2 %}{% endblock %}
+{%- block sidebar2 %}{% endblock %}
+
+{% block css %}
+   <link rel="stylesheet" href="{{ pathto('css/ceative.min.css', 1) }}" type="text/css" />
 {% endblock %}
