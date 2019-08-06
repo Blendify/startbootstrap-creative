@@ -4,6 +4,21 @@
 {%- block relbar2 %}{% endblock %}
 {%- block sidebar2 %}{% endblock %}
 
-{% block css %}
+{%- block scripts %}
+   {{ super() }}
+   <!-- Bootstrap core JavaScript -->
+   <script type="text/javascript" src="{{ pathto('vendor/jquery/jquery.min.js', 1) }}"></script>
+   <script type="text/javascript" src="{{ pathto('vendor/bootstrap/js/bootstrap.bundle.min.js', 1) }}"></script>
+
+   <!-- Plugin JavaScript -->
+   <script type="text/javascript" src="{{ pathto('vendor/jquery-easing/jquery.easing.min.js', 1) }}"></script>
+   <script type="text/javascript" src="{{ pathto('vendor/magnific-popup/jquery.magnific-popup.min.js', 1) }}"></script>
+
+   <!-- Custom scripts for this template -->
+   <script type="text/javascript" src="{{ pathto('js/creative.min.js', 1) }}"></script>
+{%- endblock %}
+
+{%- block css %}
+   {{ super() }}
    <link rel="stylesheet" href="{{ pathto('css/ceative.min.css', 1) }}" type="text/css" />
-{% endblock %}
+{%- endblock %}
